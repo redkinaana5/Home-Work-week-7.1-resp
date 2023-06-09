@@ -1,0 +1,75 @@
+.body {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: minmax(80px, 100px) 500px 120px;
+  font-weight: 900;
+  font-size: large;
+}
+
+.head-element {
+  background-color: rgb(135, 210, 185);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-element {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(248, 223, 190);
+  justify-content: space-around;
+}
+
+.main-add {
+  display: grid;
+  grid-template-columns: minmax(200px, 450px) minmax(200px, 450px);
+  grid-template-rows: 80px 80px;
+  gap: 20px;
+}
+
+.one {
+  padding-top: 30px;
+  background-color: rgb(243, 185, 78);
+}
+
+.three {
+  padding-top: 30px;
+  background-color: rgb(243, 185, 78);
+  display: grid;
+  /* grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 3; */
+  grid-area: 2/1/3/3;
+}
+
+.aside-element {
+  background-color: rgb(177, 255, 203);
+  text-align: center;
+  padding-top: 73px;
+}
+
+.footer-element {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  column-gap: 20px;
+  background-color: rgb(195, 195, 195);
+}
+
+.section {
+  background-color: rgb(255, 255, 255);
+  padding: 35px;
+}
